@@ -31,6 +31,7 @@ const htmlLoyout = async () => {
         const itemFigure = document.createElement('figure')
             const img = document.createElement('img')
             img.src = item.icon
+            img.alt = "image about " + item.category
 
             const description = document.createElement('p')
             description.textContent = item.category
