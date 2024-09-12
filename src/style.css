@@ -223,15 +223,18 @@ article div{
     }
 
     .container {
+        border-radius: 1.5rem;
         min-height: 0;
 
         display: flex;
+        box-shadow: 1rem 1rem 3rem 0px var(--Low-dark-gray-blue);
+        background-color: var(--White);
     }
 
     .results {
+        border-radius: 1.5rem;
         padding: 2rem;
         max-width: 19rem;
-        border-radius: 36px;
     }
 
     .percentage {
@@ -240,8 +243,6 @@ article div{
     }
 
     .summary {
-        border-radius: 1.5rem;
-        min-width: 36vh;
-        box-shadow: 2rem 2rem 4rem var(--Low-dark-gray-blue);
+        min-width: 40vh;
     }
 }
