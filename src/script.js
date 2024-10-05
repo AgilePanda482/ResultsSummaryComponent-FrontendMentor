@@ -18,10 +18,8 @@ const jsonInformation = async () => {
 }
 
 const htmlLoyout = async () => {
-    const data = await jsonInformation()
-    const withoutParsed = JSON.stringify(data, null, 2)
-
-    const jsonData = JSON.parse(withoutParsed)
+    const jsonData = await jsonInformation()
+    
     const sectionSummary = document.getElementById("section-summary")
 
     jsonData.forEach(item => {
